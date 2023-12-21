@@ -13,7 +13,6 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        display-name = "MAIN";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -27,7 +26,6 @@
                         >;
                 };
                 lower_layer {
-                        display-name = "LOWER";
 // -----------------------------------------------------------------------------------------
 // |  TAB | EXCL |  AT  | HASH | DLLR | PRCNT|   |CARET | AMPS | STAR | LPAR | RPAR | BKSP |
 // | SHFT |  N1  |  N2  |  N3  |  N4  |  N5  |   |  N6  |  N7  |  N8  |  N9  |  N0  |      |
@@ -42,7 +40,6 @@
                 };
 
                 raise_layer {
-                        display-name = "RAISED";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  F1  |  F2  |  F3  |  F4  |  F5  |   |   F6   |  F7   |   F8   |  F9  |  F10 | DEL  |
 // | SHFT |  F11 | F12  |      |      | GRAVE|   |KP_MINUS|KP_PLUS|KP_EQUAL|UNDER |  LT  | GT   |
@@ -56,7 +53,6 @@
                         >;
                 };
 //                combo_layer {
-//                        display-name = "COMBO";
 //// -----------------------------------------------------------------------------------------
 //// | TAB |  C_MUTE  |      |      |      |        |   |     |    |    |    |PSCRN| DEL|
 //// | SHFT| C_VOL_UP |C_PREV|C_PLAY|C_NEXT|C_BRI_UP|   |     |    |    |    |     |    |
