@@ -33,9 +33,9 @@
 //                      | ALT  |      |  SPC |   |SHENT |      | GUI  |
                         bindings = <
         &kp TAB         &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp CARET       &kp AMPS        &kp STAR        &kp LPAR        &kp RPAR        &kp BSPC
-        &bt SHFT        &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0          &trans
-        &kp CTRL        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4            &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &kp BT_CLR
-                                                        &kp LALT        &trans          &kp SPACE               &mt LSHFT RET   &trans          &kp LGUI
+        &kp SHFT        &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0          &none
+        &kp CTRL        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4            &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &none          &kp BT_CLR
+                                                        &kp LALT        &none          &kp SPACE               &mt LSHFT RET   &none          &kp LGUI
                         >;
                 };
 
@@ -47,9 +47,9 @@
 //                      |  ALT |      | SPC  |   |  SHENT |       |  GUI   |
                         bindings = <
         &kp TAB         &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F0          &kp DEL
-        &bt SHFT        &kp F11         &kp F12         &trans          &trans          &kp GRAVE               &kp KP_MINUS    &kp KP_PLUS     &kp KP_EQUAL    &kp UNDER       &kp LT          &kp GT
-        &kp CTRL        &trans          &trans          &trans          &trans          &kp BSLH                &kp LPAR        &kp RPAR        &kp LBRC        &kp RBRC        &kp LBKT        &kp RBKT
-                                                        &kp LALT        &trans          &kp SPC                 &mt LSHFT RET   &trans          &kp LGUI
+        &kp SHFT        &kp F11         &kp F12         &none          &none          &kp GRAVE               &kp KP_MINUS    &kp KP_PLUS     &kp KP_EQUAL    &kp UNDER       &kp LT          &kp GT
+        &kp CTRL        &none          &none          &none          &none          &kp BSLH                &kp LPAR        &kp RPAR        &kp LBRC        &kp RBRC        &kp LBKT        &kp RBKT
+                                                        &kp LALT        &none          &kp SPC                 &mt LSHFT RET   &none          &kp LGUI
                         >;
                 };
 //                combo_layer {
@@ -60,9 +60,9 @@
 //// | CTRL|C_VOL_DOWN|C_PREV|C_PLAY|C_NEXT|C_BRI_DN|   |     |    |    |    |     |    |
 ////                         |  ALT |      |  SPC   |   |SHENT|    | GUI|
 //                        bindings = <
-//        &kp TAB         &kp C_MUTE      &trans          &trans          &trans          &trans                  &trans          &trans          &trans          &trans          &kp PSCRN       &kp DEL
-//        &bt SHFT        &kp C_VOL_UP    &kp C_PREV      &kp C_PLAY      &kp C_NEXT      &kp C_BRI_UP            &trans          &trans          &trans          &trans          &trans          &trans
-//        &kp CTRL        &kp C_VOL_DOWN  &kp C_PREV      &kp C_PLAY      &kp C_NEXT      &kp C_BRI_DN            &trans          &trans          &trans          &trans          &trans          &trans
+//        &kp TAB         &kp C_MUTE      &none          &none          &none          &none                  &none          &none          &none          &none          &kp PSCRN       &kp DEL
+//        &bt SHFT        &kp C_VOL_UP    &kp C_PREV      &kp C_PLAY      &kp C_NEXT      &kp C_BRI_UP            &none          &none          &none          &none          &none          &none
+//        &kp CTRL        &kp C_VOL_DOWN  &kp C_PREV      &kp C_PLAY      &kp C_NEXT      &kp C_BRI_DN            &none          &none          &none          &none          &none          &trans
 //                                                        &kp LALT        &trans          &kp SPC                 &mt LSHFT RET   &trans          &kp LGUI
 //                        >;
 //                };
