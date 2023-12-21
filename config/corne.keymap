@@ -55,19 +55,19 @@
                                                         &kp LALT        &trans          &kp SPC                 &mt LSHFT RET   &trans          &kp LGUI
                         >;
                 };
-                combo_layer {
-                        display-name = "COMBO";
-// -----------------------------------------------------------------------------------------
-// | TAB |  C_MUTE  |      |      |      |        |   |     |    |    |    |PSCRN| DEL|
-// | SHFT| C_VOL_UP |C_PREV|C_PLAY|C_NEXT|C_BRI_UP|   |     |    |    |    |     |    |
-// | CTRL|C_VOL_DOWN|C_PREV|C_PLAY|C_NEXT|C_BRI_DN|   |     |    |    |    |     |    |
-//                         |  ALT |      |  SPC   |   |SHENT|    | GUI|
-                        bindings = <
-        &kp TAB         &kp C_MUTE      &trans          &trans          &trans          &trans                  &trans          &trans          &trans          &trans          &kp PSCRN       &kp DEL
-        &bt SHFT        &kp C_VOL_UP    &kp C_PREV      &kp C_PLAY      &kp C_NEXT      &kp C_BRI_UP            &trans          &trans          &trans          &trans          &trans          &trans
-        &kp CTRL        &kp C_VOL_DOWN  &kp C_PREV      &kp C_PLAY      &kp C_NEXT      &kp C_BRI_DN            &trans          &trans          &trans          &trans          &trans          &trans
-                                                        &kp LALT        &trans          &kp SPC                 &mt LSHFT RET   &trans          &kp LGUI
-                        >;
-                };
+//                combo_layer {
+//                        display-name = "COMBO";
+//// -----------------------------------------------------------------------------------------
+//// | TAB |  C_MUTE  |      |      |      |        |   |     |    |    |    |PSCRN| DEL|
+//// | SHFT| C_VOL_UP |C_PREV|C_PLAY|C_NEXT|C_BRI_UP|   |     |    |    |    |     |    |
+//// | CTRL|C_VOL_DOWN|C_PREV|C_PLAY|C_NEXT|C_BRI_DN|   |     |    |    |    |     |    |
+////                         |  ALT |      |  SPC   |   |SHENT|    | GUI|
+//                        bindings = <
+//        &kp TAB         &kp C_MUTE      &trans          &trans          &trans          &trans                  &trans          &trans          &trans          &trans          &kp PSCRN       &kp DEL
+//        &bt SHFT        &kp C_VOL_UP    &kp C_PREV      &kp C_PLAY      &kp C_NEXT      &kp C_BRI_UP            &trans          &trans          &trans          &trans          &trans          &trans
+//        &kp CTRL        &kp C_VOL_DOWN  &kp C_PREV      &kp C_PLAY      &kp C_NEXT      &kp C_BRI_DN            &trans          &trans          &trans          &trans          &trans          &trans
+//                                                        &kp LALT        &trans          &kp SPC                 &mt LSHFT RET   &trans          &kp LGUI
+//                        >;
+//                };
         };
 };
