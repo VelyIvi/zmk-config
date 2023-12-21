@@ -13,43 +13,60 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
+                        display-name = "MAIN";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | ALT | LWR | SPC |   | ShiftEnt | RSE  | GUI |
+//                    | ALT | LWR | SPC |   |SHENT| RSE  | GUI |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LSHIFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LALT &mo 1 &kp SPACE   &mt LSHFT RET &mo 2 &kp LGUI
+        &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+        &kp LSHIFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+        &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+                        &kp LALT &mo 1 &kp SPACE   &mt LSHFT RET &mo 2 &kp LGUI
                         >;
                 };
                 lower_layer {
+                        display-name = "LOWER";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |  TAB | EXCL |  AT  | HASH | DLLR | PRCNT|   |CARET | AMPS | STAR | LPAR | RPAR | BKSP |
+// | SHFT |  N1  |  N2  |  N3  |  N4  |  N5  |   |  N6  |  N7  |  N8  |  N9  |  N0  |      |
+// | CTRL |  BT1 |  BT2 |  BT3 |  BT4 |  BT5 |   | LEFT | DOWN |  UP  |RIGHT |      |BT_CLR|
+//                      | ALT  |      |  SPC |   |SHENT |      | GUI  |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+        &kp TAB         &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp CARET       &kp AMPS        &kp STAR        &kp LPAR        &kp RPAR        &kp BSPC
+        &bt SHFT        &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0          &trans
+        &kp CTRL        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4            &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &kp BT_CLR
+                                                        &kp LALT        &trans          &kp SPACE               &mt LSHFT RET   &trans          &kp LGUI
                         >;
                 };
 
                 raise_layer {
+                        display-name = "RAISED";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |  TAB |  F1  |  F2  |  F3  |  F4  |  F5  |   |   F6   |  F7   |   F8   |  F9  |  F10 | DEL  |
+// | SHFT |  F11 | F12  |      |      | GRAVE|   |KP_MINUS|KP_PLUS|KP_EQUAL|UNDER |  LT  | GT   |
+// | CTRL |      |      |      |      | BSLH |   |  LPAR  | RPAR  |  LBRC  | RBRC | LBKT | RBKT |
+//                      |  ALT |      | SPC  |   |  SHENT |       |  GUI   |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+        &kp TAB         &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F0          &kp DEL
+        &bt SHFT        &kp F11         &kp F12         &trans          &trans          &kp GRAVE               &kp KP_MINUS    &kp KP_PLUS     &kp KP_EQUAL    &kp UNDER       &kp LT          &kp GT
+        &kp CTRL        &trans          &trans          &trans          &trans          &kp BSLH                &kp LPAR        &kp RPAR        &kp LBRC        &kp RBRC        &kp LBKT        &kp RBKT
+                                                        &kp LALT        &trans          &kp SPC                 &mt LSHFT RET   &trans          &kp LGUI
+                        >;
+                };
+                combo_layer {
+                        display-name = "COMBO";
+// -----------------------------------------------------------------------------------------
+// | TAB |  C_MUTE  |      |      |      |        |   |     |    |    |    |PSCRN| DEL|
+// | SHFT| C_VOL_UP |C_PREV|C_PLAY|C_NEXT|C_BRI_UP|   |     |    |    |    |     |    |
+// | CTRL|C_VOL_DOWN|C_PREV|C_PLAY|C_NEXT|C_BRI_DN|   |     |    |    |    |     |    |
+//                         |  ALT |      |  SPC   |   |SHENT|    | GUI|
+                        bindings = <
+        &kp TAB         &kp C_MUTE      &trans          &trans          &trans          &trans                  &trans          &trans          &trans          &trans          &kp PSCRN       &kp DEL
+        &bt SHFT        &kp C_VOL_UP    &kp C_PREV      &kp C_PLAY      &kp C_NEXT      &kp C_BRI_UP            &trans          &trans          &trans          &trans          &trans          &trans
+        &kp CTRL        &kp C_VOL_DOWN  &kp C_PREV      &kp C_PLAY      &kp C_NEXT      &kp C_BRI_DN            &trans          &trans          &trans          &trans          &trans          &trans
+                                                        &kp LALT        &trans          &kp SPC                 &mt LSHFT RET   &trans          &kp LGUI
                         >;
                 };
         };
