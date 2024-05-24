@@ -54,7 +54,7 @@
                         display-name = "RAISED";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  F1  |  F2  |  F3  |  F4  |  F5  |   |   F6   |  F7   |   F8   |  F9  |  F10 | DEL  |
-// | SHFT |  F11 | F12  |      |      | GRAVE|   |KP_MINUS|KP_PLUS|KP_EQUAL|UNDER |  LT  | GT   |
+// | SHFT |  F11 | F12  |      |      | GRAVE|   |KP_MINUS|KP_PLUS|  EQUAL |UNDER |  LT  | GT   |
 // | CTRL |      |      |      |      | BSLH |   |  LPAR  | RPAR  |  LBRC  | RBRC | LBKT | RBKT |
 //                      |  ALT |      | SPC  |   |  SHENT |       |  GUI   |
                         bindings = <
