@@ -59,7 +59,7 @@
 //                      |  ALT |      | SPC  |   |  SHENT |       |  GUI   |
                         bindings = <
         &kp TAB         &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10          &kp DEL
-        &kp LSHFT        &kp F11         &kp F12         &none          &none          &kp GRAVE               &kp KP_MINUS    &kp KP_PLUS     &kp KP_EQUAL    &kp UNDER       &kp LT          &kp GT
+        &kp LSHFT        &kp F11         &kp F12         &none          &none          &kp GRAVE               &kp KP_MINUS    &kp KP_PLUS     &kp EQUAL    &kp UNDER       &kp LT          &kp GT
         &kp LCTRL        &none          &none          &none          &none          &kp BSLH                &kp LPAR        &kp RPAR        &kp LBRC        &kp RBRC        &kp LBKT        &kp RBKT
                                                         &kp LALT        &trans          &kp SPC                 &mt LSHFT RET   &trans        &kp LGUI
                         >;
